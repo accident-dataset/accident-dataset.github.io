@@ -73,7 +73,7 @@
                             </span>
 
                             <!-- Github link -->
-                                <span class="link-block">
+                            <span class="link-block">
                                     <a href="https://github.com/accident-dataset/AccidentDet3D" target="_blank"
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -136,10 +136,26 @@
     </div>
 </section>
 
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                <img src="static/images/accidents_title_cropped.svg" alt="infrastructure_sensors"
+                     style="border: 2px solid #000000;"/>
+                <h2 class="subtitle">
+                    <b>Visualization of the raw Accid3nD dataset.</b> Accidents are recorded from roadside cameras on a
+                    test bed for autonomous driving. The dataset includes scenes with collisions and overturning
+                    vehicles. Some vehicles are catching fire.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop">
-            <video poster="" autoplay controls muted loop height="100%">
+            <video style="border:2px solid black;" poster="" autoplay controls muted loop height="100%">
                 <source src="static/videos/grid_6x8_scaled.mp4" type="video/mp4">
             </video>
         </div>
@@ -164,20 +180,27 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3">Overview</h2>
                 <div class="content">
-                    <strong>The Accid3nD</strong> dataset is the first high-quality real-world accident <strong>dataset</strong>
-                    for the 3D object detection, segmentation, tracking, trajectory prediction and accident detection task in autonomous driving.<br><br>
+                    <strong>The Accid3nD</strong> dataset is the first high-quality real-world accident
+                    <strong>dataset</strong>
+                    for the 3D object detection, segmentation, tracking, trajectory prediction and accident detection
+                    task in autonomous driving.<br><br>
                     It contains:
                     <ul>
-                        <li>data collected by <strong>5 sensors</strong> (cameras and LiDARs) simultaneously from onboard and roadside
+                        <li>data collected by <strong>5 sensors</strong> (cameras and LiDARs) simultaneously from
+                            onboard and roadside
                             sensors.
                         </li>
                         <li><strong>111,945</strong> labeled frames of vehicle crashes at high-speed driving.
                         </li>
-                        <li><strong>2,634,233</strong> labeled 2D bounding boxes, instance segmentation masks, 3D bounding boxes with track IDs.</li>
-                        <li>Real accidents including vehicle rollovers, vehicles catching fire and collision events.</li>
+                        <li><strong>2,634,233</strong> labeled 2D bounding boxes, instance segmentation masks, 3D
+                            bounding boxes with track IDs.
+                        </li>
+                        <li>Real accidents including vehicle rollovers, vehicles catching fire and collision events.
+                        </li>
                         <li><strong>HD map</strong> of the highway.</li>
                         <li>Labels in <strong>OpenLABEL</strong> standard.</li>
-                        <li>A dataset <strong>development kit</strong> to load, preprocess, visualize, convert labels, and to
+                        <li>A dataset <strong>development kit</strong> to load, preprocess, visualize, convert labels,
+                            and to
                             evaluate accident detection models.
                         </li>
                     </ul>
@@ -195,7 +218,18 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Even though a significant amount of work has been done to increase the safety of transportation networks, accidents still occur regularly. They must be understood as an unavoidable and sporadic outcome of traffic networks. No public dataset contains real-world accidents recorded from roadside sensors. We present the Accid3nD dataset, a collection of real-world highway accidents in different weather and lighting conditions. It contains vehicle crashes at high-speed driving with 2,634,233 labeled 2D bounding boxes, instance masks, and 3D bounding boxes with track IDs. In total, the dataset contains 111,945 labeled frames recorded from four roadside cameras and LiDARs at 25 Hz. The dataset contains six object classes and is provided in the OpenLABEL format. We propose an accident detection model that combines a rule-based approach with a learning-based one. Experiments and ablation studies on our dataset show the robustness of our proposed method. The dataset, model, and code are publicly available on our project website.
+                        Even though a significant amount of work has been done to increase the safety of transportation
+                        networks, accidents still occur regularly. They must be understood as an unavoidable and
+                        sporadic outcome of traffic networks. No public dataset contains real-world accidents recorded
+                        from roadside sensors. We present the Accid3nD dataset, a collection of real-world highway
+                        accidents in different weather and lighting conditions. It contains vehicle crashes at
+                        high-speed driving with 2,634,233 labeled 2D bounding boxes, instance masks, and 3D bounding
+                        boxes with track IDs. In total, the dataset contains 111,945 labeled frames recorded from four
+                        roadside cameras and LiDARs at 25 Hz. The dataset contains six object classes and is provided in
+                        the OpenLABEL format. We propose an accident detection model that combines a rule-based approach
+                        with a learning-based one. Experiments and ablation studies on our dataset show the robustness
+                        of our proposed method. The dataset, model, and code are publicly available on our project
+                        website.
                     </p>
                 </div>
             </div>
@@ -212,8 +246,12 @@
                 <div class="content is-align-content-start">
                     The following roadside sensors were used:
                     <ul>
-                        <li>4x <strong>Basler</strong> ace acA1920-50gc, 1920×1200, Sony IMX174 with 16 mm and 50 mm lenses, frame rate: 50 Hz</li>
-                        <li>1x <strong>Valeo</strong> LiDAR (SCALA B2), 16 vertical layers, 133° horiz. FOV, 0.125° x 0.6° angular resolution, 200 m range (@80% reflectivity), frame rate: 25 Hz</li>
+                        <li>4x <strong>Basler</strong> ace acA1920-50gc, 1920×1200, Sony IMX174 with 16 mm and 50 mm
+                            lenses, frame rate: 50 Hz
+                        </li>
+                        <li>1x <strong>Valeo</strong> LiDAR (SCALA B2), 16 vertical layers, 133° horiz. FOV, 0.125° x
+                            0.6° angular resolution, 200 m range (@80% reflectivity), frame rate: 25 Hz
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -227,24 +265,159 @@
     <div class="container is-max-desktop">
         <div class="hero-body">
             <div class="item">
-                <img src="static/images/s50_sensor_station.png" alt="infrastructure_sensors"/>
-                <h2 class="subtitle has-text-centered">
-                    Visualization of roadside sensors used to record our Accid3nD Dataset from roadside infrastructure perspective.
+                <img src="static/images/test_field_overview_cropped.svg" alt="infrastructure_sensors"
+                     style="border:2px solid black;"/>
+                <h2 class="subtitle">
+                    <b>Overview of the test field.</b> The green area on the highway marks the area that was used to
+                    record the data with four roadside cameras, four radars, and one LiDAR.
+                </h2>
+                <center>
+                    <img src="static/images/s050_cropped.svg" alt="infrastructure_sensors"
+                         style="border:2px solid black;"/>
+                </center>
+                <h2 class="subtitle">
+                    <b>Visualization of roadside sensors</b> used to record our Accid3nD Dataset from roadside
+                    infrastructure perspective.
                 </h2>
             </div>
         </div>
     </div>
 </section>
 
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                <h2 class="title is-3">Architecture</h2>
+                <img src="static/images/pipeline_cropped.svg" alt="infrastructure_sensors"
+                     style="border:2px solid black;"/>
+                <h2 class="subtitle">
+                    <b>Accident detection pipeline.</b> We use advanced 3D perception techniques and multi-sensor data
+                    fusion to create a real-time
+                    digital twin of the traffic. Starting with raw camera images, the framework first performs 3D object
+                    detection using MonoDet3D to
+                    identify and localize vehicles in three dimensions. Following detection, Poly-MOT tracking is
+                    applied to maintain continuity across
+                    frames, while sensor data fusion combines inputs from four roadside cameras and four radars. The
+                    digital twin is then used in two
+                    accident detection modules: 1) The <b>Rule-based Accident Detection</b> module extracts features
+                    such as lane IDs, distance matrices, and
+                    velocities, identifying potential accidents through predefined maneuver detection rules. 2) The <b>Learning-based
+                    Accident Detection</b>
+                    module employs a YOLOv8 object detector, trained on a custom dataset, to detect accident events. The
+                    final output includes the object’s
+                    location, confidence score, class, velocity, and detected scenario or maneuver.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="hero teaser">
     <div class="container is-max-desktop">
         <div class="hero-body">
             <div class="item">
-                <img src="static/images/bar_chart_class_occurrences_all_drives.png" alt="infrastructure_sensors"/>
-                <h2 class="subtitle has-text-centered">
-                    Distribution of labeled object classes in the Accid3nD dataset.
+                <h2 class="title is-3">Accid3nD Dataset</h2>
+                <img src="static/images/accidents_labeled_cropped.svg" alt="infrastructure_sensors"
+                     style="border:2px solid black;"/>
+                <h2 class="subtitle">
+                    <b>Visualization of the labeled Accid3nD dataset</b> with 3D box annotations, instance masks, track
+                    IDs, and trajectories.
+                    Accidents are recorded from roadside cameras on a test bed for autonomous driving. The dataset
+                    includes scenes with collisions and
+                    overturning vehicles. Some vehicles are catching fire.
                 </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                <h2 class="title is-3">Statistics</h2>
+                <center>
+                    <img src="static/images/bar_chart_class_occurrences_all_drives.svg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        Distribution of labeled object classes in the Accid3nD dataset.
+                    </h2>
+                    <img src="static/images/bar_chart_avg_track_lengths_all_drives.svg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        Average and max. track lengths of all labeled object classes.
+                    </h2>
+                    <img src="static/images/histogram_distances.svg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        Histogram of labeling distances.
+                    </h2>
+                    <img src="static/images/histogram_objects_in_frame.svg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        Histogram of the number of 3D box labels.
+                    </h2>
+                    <img src="static/images/histogram_track_lengths.svg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        Histogram of the track lengths.
+                    </h2>
+                    <img src="static/images/histogram_lane_distribution.svg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        Lane distribution of all labeled objects on the highway.
+                    </h2>
+                    <img src="static/images/bar_chart_speed_all_drives.svg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        <b>Visualization of speed values for each labeled category.</b> We show the average and maximum
+                        speed values for all categories. The average speed is 107 km/h in the dataset.
+                    </h2>
+                    <img src="static/images/pie_chart_accident_types.svg" alt="infrastructure_sensors" width="50%"/>
+                    <h2 class="subtitle has-text-centered">
+                        <b>Distribution of accident types.</b>
+                    </h2>
+                    <img src="static/images/heatmap.jpg" alt="infrastructure_sensors" style="border:2px solid black;"/>
+                    <h2 class="subtitle has-text-centered">
+                        <b>Heatmap visualization of traffic participant locations.</b> The left lane on the highway
+                        towards the north direction indicates a high traffic volume.
+                    </h2>
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                <h2 class="title is-3">Quantitative Evaluation Results</h2>
+                <img src="static/images/evaluation.png" alt="infrastructure_sensors" style="border:2px solid black;"/>
+                <h2 class="subtitle">
+                    <b>Quantitative evaluation results</b> of the accident detection module (rule-based approach) over a
+                    128-day monitoring period. The statistics include the detected vehicles, maneuvers, scenarios, and
+                    accident events.
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="item">
+                <h2 class="title is-3">Qualitative Evaluation Results</h2>
+                <center>
+                    <img src="static/images/qualitative_result_rule_based_approach.png" alt="infrastructure_sensors"
+                         width="50%" style="border:2px solid black;"/>
+                    <h2 class="subtitle">
+                        <b>Qualitative visualization results of our accident detection framework on the Accid3nD test
+                            set.</b> The rule-based approach detected a rear-end collision.
+                    </h2>
+                    <img src="static/images/qualitative_result_learning_based_approach.png" alt="infrastructure_sensors"
+                         width="50%" style="border:2px solid black;"/>
+                    <h2 class="subtitle">
+                        <b>Qualitative visualization results of our accident detection framework on the Accid3nD test
+                            set.</b> The learning-based approach detected a car crash with a confidence threshold of
+                        0.8.
+                    </h2>
+                </center>
             </div>
         </div>
     </div>
@@ -254,51 +427,51 @@
     <div class="hero-body">
         <div class="container is-max-desktop">
             Sequence 01:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s01_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 02:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s02_scaled.mp4" type="video/mp4">
             </video>
             Sequence 03:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s03_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 04:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s04_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 05:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s05_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 06:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s06_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 07:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s07_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 08:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s08_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 09:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s09_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 10:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s10_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 11:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s11_2x2_scaled.mp4" type="video/mp4">
             </video>
             Sequence 12:
-            <video poster="" autoplay controls muted loop height="100%">
+            <video poster="" autoplay controls muted loop height="100%" style="border:2px solid black;">
                 <source src="static/videos/r09_s12_2x2_scaled.mp4" type="video/mp4">
             </video>
         </div>
@@ -307,49 +480,165 @@
 
 <section class="hero">
     <div class="hero">
-        <h3 class="title is-8 has-text-centered">Benchmark</h3>
-        <div class="container is-centered">
-            <table class="table is-centered center">
-                <thead>
-                <tr>
-                    <th>Config</th>
-                    <th></th>
-                    <th>BEV mAP</th>
-                    <th></th>
-                    <th>3D mAP</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <th>Domain</th>
-                    <th>Modality</th>
-                    <th>&nbsp;</th>
-                    <th>Easy</th>
-                    <th>Moderate</th>
-                    <th>Hard</th>
-                    <th>Average</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                    <td>TBD</td>
-                </tr>
-
-                </tbody>
-            </table>
-            <h5 class="is-3 has-text-centered">
-                Evaluation results (BEV mAP and 3D mAP) of <strong>AccidentDet3D</strong> on our <br>
-                Accid3nD test set.
-            </h5>
-        </div>
+        <h3 class="title is-8 has-text-centered">Experiments</h3>
+        <center>
+            <div class="container is-centered">
+                <table class="table is-centered center">
+                    <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th colspan="2" align="center">Runtime</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Rule-based</th>
+                        <th>Learning-based</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Sequence S01, part I</td>
+                        <td>8.63</td>
+                        <td>484.69</td>
+                    </tr>
+                    <tr>
+                        <td>Sequence S01, part II</td>
+                        <td>6.60</td>
+                        <td>474.69</td>
+                    </tr>
+                    <tr>
+                        <td>Sequence S13, part I</td>
+                        <td>5.02</td>
+                        <td>240.43</td>
+                    </tr>
+                    <tr>
+                        <td>Sequence S13, part II</td>
+                        <td>5.33</td>
+                        <td>248.16</td>
+                    </tr>
+                    <tr>
+                        <td>Avg. (with 2 cameras)</td>
+                        <td>5.17</td>
+                        <td>244.30</td>
+                    </tr>
+                    <tr>
+                        <td>Avg. (with 4 cameras)</td>
+                        <td>7.61</td>
+                        <td>479.69</td>
+                    </tr>
+                    <tr>
+                        <td>Average (overall)</td>
+                        <td><strong>6.39</strong></td>
+                        <td>361.99</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h5 class="is-3 has-text-centered">
+                    Runtime comparison of <strong>AccidentDet3D</strong> on a 15 minute long traffic recording
+                    containing 20,000 frames.</b> We compare our
+                    rule-based and learning-based accident detection based on the runtime (in seconds). We ablate on the
+                    number of cameras used for the detection task to show the scalability of our approach.
+                </h5>
+            </div>
+        </center>
     </div>
 </section>
+
+<section class="hero">
+    <div class="hero">
+        <h3 class="title is-8 has-text-centered">Benchmark</h3>
+        <center>
+            <div class="container is-centered">
+                <table class="table is-centered center">
+                    <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th colspan="3" align="center">Accuracy</th>
+                        <th colspan="2" align="center">Runtime [s]</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1-Score</th>
+                        <th>2 cameras</th>
+                        <th>4 cameras</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Rule-based Approach</td>
+                        <td>1.000</td>
+                        <td>0.500</td>
+                        <td>0.667</td>
+                        <td>0.086</td>
+                        <td>0.127</td>
+                    </tr>
+                    <tr>
+                        <td>Learning-based Approach</td>
+                        <td>0.800</td>
+                        <td>1.000</td>
+                        <td>0.889</td>
+                        <td>4.072</td>
+                        <td>7.995</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <h5 class="is-3 has-text-centered">
+                    Accident detection results of <strong>AccidentDet3D</strong> on our <b>Accid3nD test set.</b> We
+                    compare our rule-based and learning-based accident detection approach on our test set.
+                </h5>
+            </div>
+        </center>
+    </div>
+</section>
+
+<!--<section class="hero">-->
+<!--    <div class="hero">-->
+<!--        <h3 class="title is-8 has-text-centered">Benchmark</h3>-->
+<!--        <div class="container is-centered">-->
+<!--            <table class="table is-centered center">-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                    <th>Config</th>-->
+<!--                    <th></th>-->
+<!--                    <th>BEV mAP</th>-->
+<!--                    <th></th>-->
+<!--                    <th>3D mAP</th>-->
+<!--                    <th></th>-->
+<!--                    <th></th>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th>Domain</th>-->
+<!--                    <th>Modality</th>-->
+<!--                    <th>&nbsp;</th>-->
+<!--                    <th>Easy</th>-->
+<!--                    <th>Moderate</th>-->
+<!--                    <th>Hard</th>-->
+<!--                    <th>Average</th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                <tr>-->
+<!--                    <td>TBD</td>-->
+<!--                    <td>TBD</td>-->
+<!--                    <td>TBD</td>-->
+<!--                    <td>TBD</td>-->
+<!--                    <td>TBD</td>-->
+<!--                    <td>TBD</td>-->
+<!--                    <td>TBD</td>-->
+<!--                </tr>-->
+
+<!--                </tbody>-->
+<!--            </table>-->
+<!--            <h5 class="is-3 has-text-centered">-->
+<!--                Evaluation results (BEV mAP and 3D mAP) of <strong>AccidentDet3D</strong> on our <br>-->
+<!--                Accid3nD test set.-->
+<!--            </h5>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 
 <footer class="footer">
