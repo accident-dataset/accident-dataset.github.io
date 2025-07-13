@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
     <!-- Replace the content tag with appropriate information -->
-    <meta name="description" content="Towards Vision Zero: The Accid3nD Dataset">
-    <meta property="og:title" content="Towards Vision Zero: The Accid3nD Dataset"/>
-    <meta property="og:description" content="Towards Vision Zero: The Accid3nD Dataset"/>
+    <meta name="description" content="Towards Vision Zero: The TUM Traffic Accid3nD Dataset">
+    <meta property="og:title" content="Towards Vision Zero: The TUM Traffic Accid3nD Dataset"/>
+    <meta property="og:description" content="Towards Vision Zero: The TUM Traffic Accid3nD Dataset"/>
     <meta property="og:url" content="https://accident-dataset.github.io/"/>
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
     <meta property="og:image" content="static/image/your_banner_image.png"/>
@@ -15,8 +15,8 @@
     <meta property="og:image:height" content="630"/>
 
 
-    <meta name="twitter:title" content="Towards Vision Zero: The Accid3nD Dataset">
-    <meta name="twitter:description" content="Towards Vision Zero: The Accid3nD Dataset">
+    <meta name="twitter:title" content="Towards Vision Zero: The TUM Traffic Accid3nD Dataset">
+    <meta name="twitter:description" content="Towards Vision Zero: The TUM Traffic Accid3nD Dataset">
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
     <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -52,7 +52,7 @@
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
-                    <h1 class="title is-4 publication-title">Towards Vision Zero: The Accid3nD Dataset</h1>
+                    <h1 class="title is-4 publication-title">Towards Vision Zero: The TUM Traffic Accid3nD Dataset</h1>
                     <!--                    <div class="is-size-5 publication-authors">-->
                     <!--                    </div>-->
 
@@ -63,7 +63,7 @@
                     <div class="column has-text-centered">
                         <div class="publication-links">
                               <span class="link-block">
-                              <a href="https://arxiv.org/pdf/0000.00000.pdf" target="_blank"
+                              <a href="https://arxiv.org/abs/2503.12095" target="_blank"
                                  class="external-link button is-normal is-rounded is-dark">
                                 <span class="icon">
                                 <i class="fas fa-file-pdf"></i>
@@ -86,7 +86,7 @@
 
                             <!-- Dataset link -->
                             <span class="link-block">
-                                    <a href="https://github.com/accident-dataset/Accid3nD-dataset"
+                                    <a href="https://nx21496.your-storageshare.de/s/Zd4rwsMwwXMaXiK/download"
                                        target="_blank" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fa fa-database"></i>
@@ -97,7 +97,7 @@
 
                             <!-- Github link -->
                             <span class="link-block">
-                                    <a href="https://github.com/accident-dataset/Accid3nD-anno" target="_blank"
+                                    <a href="https://github.com/walzimmer/3d-bat" target="_blank"
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
@@ -108,7 +108,7 @@
 
                             <!-- Github link -->
                             <span class="link-block">
-                                    <a href="https://github.com/accident-dataset/Accid3nD-dev-kit"
+                                    <a href="https://github.com/tum-traffic-dataset/tum-traffic-dataset-dev-kit"
                                        target="_blank" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
@@ -143,8 +143,8 @@
                 <img src="static/images/accidents_title_cropped.svg" alt="infrastructure_sensors"
                      style="border: 2px solid #000000;"/>
                 <h2 class="subtitle">
-                    <b>Visualization of the raw Accid3nD dataset.</b> Accidents are recorded from roadside cameras on a
-                    test bed for autonomous driving. The dataset includes scenes with collisions and overturning
+                    <b>Visualization of the raw TUM Traffic Accid3nD dataset.</b> Accidents are recorded from roadside cameras on the
+                    A9 Digital Test Field for Autonomous Driving in Munich, Germany. The dataset includes scenes with collisions and overturning
                     vehicles. Some vehicles are catching fire.
                 </h2>
             </div>
@@ -180,19 +180,18 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3">Overview</h2>
                 <div class="content">
-                    <strong>The Accid3nD</strong> dataset is the first high-quality real-world accident
+                    <strong>The TUM Traffic Accid3nD (TUMTraf-Accid3nD)</strong> dataset is the first high-quality real-world accident
                     <strong>dataset</strong>
-                    for the 3D object detection, segmentation, tracking, trajectory prediction and accident detection
+                    for the 3D object detection, 3D segmentation, 3D tracking, 3D trajectory prediction and 3D accident detection
                     task in autonomous driving.<br><br>
                     It contains:
                     <ul>
                         <li>data collected by <strong>5 sensors</strong> (cameras and LiDARs) simultaneously from
-                            onboard and roadside
-                            sensors.
+                            onboard and roadside sensors.
                         </li>
                         <li><strong>111,945</strong> labeled frames of vehicle crashes at high-speed driving.
                         </li>
-                        <li><strong>2,634,233</strong> labeled 2D bounding boxes, instance segmentation masks, 3D
+                        <li><strong>2,634,233</strong> labeled 3D bounding boxes, instance segmentation masks, 2D
                             bounding boxes with track IDs.
                         </li>
                         <li>Real accidents including vehicle rollovers, vehicles catching fire and collision events.
@@ -200,8 +199,7 @@
                         <li><strong>HD map</strong> of the highway.</li>
                         <li>Labels in <strong>OpenLABEL</strong> standard.</li>
                         <li>A dataset <strong>development kit</strong> to load, preprocess, visualize, convert labels,
-                            and to
-                            evaluate accident detection models.
+                            and to evaluate accident detection models.
                         </li>
                     </ul>
                 </div>
@@ -221,9 +219,9 @@
                         Even though a significant amount of work has been done to increase the safety of transportation
                         networks, accidents still occur regularly. They must be understood as an unavoidable and
                         sporadic outcome of traffic networks. No public dataset contains real-world accidents recorded
-                        from roadside sensors. We present the Accid3nD dataset, a collection of real-world highway
+                        from roadside sensors. We present the TUM Traffic Accid3nD (TUMTraf-Accid3nD) dataset, a collection of real-world highway
                         accidents in different weather and lighting conditions. It contains vehicle crashes at
-                        high-speed driving with 2,634,233 labeled 2D bounding boxes, instance masks, and 3D bounding
+                        high-speed driving with 2,634,233 labeled 3D bounding boxes, instance masks, and 2D bounding
                         boxes with track IDs. In total, the dataset contains 111,945 labeled frames recorded from four
                         roadside cameras and LiDARs at 25 Hz. The dataset contains six object classes and is provided in
                         the OpenLABEL format. We propose an accident detection model that combines a rule-based approach
@@ -268,7 +266,7 @@
                 <img src="static/images/test_field_overview_cropped.svg" alt="infrastructure_sensors"
                      style="border:2px solid black;"/>
                 <h2 class="subtitle">
-                    <b>Overview of the test field.</b> The green area on the highway marks the area that was used to
+                    <b>Overview of the A9 Digital Test Field.</b> The green area on the highway marks the area that was used to
                     record the data with four roadside cameras, four radars, and one LiDAR.
                 </h2>
                 <center>
@@ -276,7 +274,7 @@
                          style="border:2px solid black;"/>
                 </center>
                 <h2 class="subtitle">
-                    <b>Visualization of roadside sensors</b> used to record our Accid3nD Dataset from roadside
+                    <b>Visualization of roadside sensors</b> used to record our TUM Traffic Accid3nD Dataset from roadside
                     infrastructure perspective.
                 </h2>
             </div>
@@ -317,11 +315,11 @@
     <div class="container is-max-desktop">
         <div class="hero-body">
             <div class="item">
-                <h2 class="title is-3">Accid3nD Dataset</h2>
+                <h2 class="title is-3">TUM Traffic Accid3nD Dataset</h2>
                 <img src="static/images/accidents_labeled_cropped.svg" alt="infrastructure_sensors"
                      style="border:2px solid black;"/>
                 <h2 class="subtitle">
-                    <b>Visualization of the labeled Accid3nD dataset</b> with 3D box annotations, instance masks, track
+                    <b>Visualization of the labeled TUMTraf-Accid3nD dataset</b> with 3D box annotations, instance masks, track
                     IDs, and trajectories.
                     Accidents are recorded from roadside cameras on a test bed for autonomous driving. The dataset
                     includes scenes with collisions and
@@ -340,7 +338,7 @@
                 <center>
                     <img src="static/images/bar_chart_class_occurrences_all_drives.svg" alt="infrastructure_sensors"/>
                     <h2 class="subtitle has-text-centered">
-                        Distribution of labeled object classes in the Accid3nD dataset.
+                        Distribution of labeled object classes in the TUMTraf-Accid3nD dataset.
                     </h2>
                     <img src="static/images/bar_chart_avg_track_lengths_all_drives.svg" alt="infrastructure_sensors"/>
                     <h2 class="subtitle has-text-centered">
@@ -407,13 +405,13 @@
                     <img src="static/images/qualitative_result_rule_based_approach.png" alt="infrastructure_sensors"
                          width="50%" style="border:2px solid black;"/>
                     <h2 class="subtitle">
-                        <b>Qualitative visualization results of our accident detection framework on the Accid3nD test
+                        <b>Qualitative visualization results of our accident detection framework on the TUMTraf-Accid3nD test
                             set.</b> The rule-based approach detected a rear-end collision.
                     </h2>
                     <img src="static/images/qualitative_result_learning_based_approach.png" alt="infrastructure_sensors"
                          width="50%" style="border:2px solid black;"/>
                     <h2 class="subtitle">
-                        <b>Qualitative visualization results of our accident detection framework on the Accid3nD test
+                        <b>Qualitative visualization results of our accident detection framework on the TUMTraf-Accid3nD test
                             set.</b> The learning-based approach detected a car crash with a confidence threshold of
                         0.8.
                     </h2>
@@ -586,7 +584,7 @@
                     </tbody>
                 </table>
                 <h5 class="is-3 has-text-centered">
-                    Accident detection results of <strong>AccidentDet3D</strong> on our <b>Accid3nD test set.</b> We
+                    Accident detection results of <strong>AccidentDet3D</strong> on our <b>TUMTraf-Accid3nD test set.</b> We
                     compare our rule-based and learning-based accident detection approach on our test set.
                 </h5>
             </div>
@@ -647,7 +645,7 @@
             <div class="column is-8">
                 <div class="content has-text-centered">
                     <p>
-                        The <strong>Accid3nD</strong> dataset is licensed under <a
+                        The <strong>TUMTraf-Accid3nD</strong> dataset is licensed under <a
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA
                         4.0</a>.
                     </p>
